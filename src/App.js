@@ -1,23 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Table from './components/Table'
 function App() {
+  const sdata=[
+        {
+          name:'张三',
+          fen:98
+        },
+        {
+          name:'李四',
+          fen:68
+        },
+      ] ;
+  const theadData=['姓名' , '成绩22'] ;
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Table sdata = {sdata} theadData={theadData} />
       </header>
     </div>
   );
