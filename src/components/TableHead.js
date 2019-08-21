@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TableHead = (props) => {
-    console.log(props.theadData);
+    // console.log(props.theadData);
     // const {theadData} = this.props;
     const tds = props.theadData.map((item,index)=>{
         return (

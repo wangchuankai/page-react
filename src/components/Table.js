@@ -3,11 +3,11 @@ import TableHead from './TableHead'
 import TableBody from './TableBody'
 class Table extends Component {
   render (){
-    const { sdata ,theadData} = this.props;
+    const { sdata ,theadData,removeCharacter } = this.props;
     return(
       <table>
         <TableHead theadData ={theadData} />
-        <TableBody sdata={sdata} />
+        <TableBody sdata={sdata}  removeCharacter={removeCharacter} />
       </table>
     )
   }
